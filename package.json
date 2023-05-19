@@ -1,0 +1,35 @@
+{
+  "name": "websitecv",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.8",
+    "@react-spring/parallax": "^9.7.2",
+    "localforage": "^1.10.0",
+    "match-sorter": "^6.3.1",
+    "react": "^18.2.0",
+    "react-awesome-reveal": "^4.2.3",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.2",
+    "react-router-hash-link": "^2.4.3",
+    "react-vertical-timeline-component": "^3.6.0",
+    "scss": "^0.2.4",
+    "sort-by": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/locomotive-scroll": "^4.1.0",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@types/react-router-hash-link": "^2.4.6",
+    "@types/react-vertical-timeline-component": "^3.3.3",
+    "@vitejs/plugin-react-swc": "^3.0.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.2.0"
+  }
+}
