@@ -9,6 +9,8 @@ import "./App.css";
 import myresume from "./assets/my_resume-sh.pdf";
 import pjatkLogo from "./assets/pjatk.png";
 import snowflakeLogo from "./assets/snowflake.png";
+import webscrapers from "./src/assets/webscraper.png";
+import ecgthesis from "./src/assets/ecg.png";
 import { PortfolioCrad } from "./component/PortolioCard";
 import { Sections } from "./component/Sections";
 import {
@@ -36,10 +38,12 @@ function App() {
           <ParallaxLayer offset={0}>
             <Sections title="About me">
               <div>
-                I am Alex, here is <a href={myresume}>my resume</a> this is 
+                I am Alex, here is <a href={myresume}>my resume</a> this is
                 <a href="https://www.linkedin.com/in/alexander-tu-515092223/">
-                 {" my linkedin"}
-                </a>, I plan to show you most things here on this page but here you go.
+                  {" my linkedin"}
+                </a>
+                , I plan to show you most things here on this page but here you
+                go.
               </div>
             </Sections>
           </ParallaxLayer>
@@ -65,10 +69,7 @@ function App() {
                   body={{
                     bodyText: WEB_SCRAPERS,
                     embedContent: (
-                      <img
-                        src={"./src/assets/webscraper.png"}
-                        width={500}
-                        height={350}></img>
+                      <img src={webscrapers} width={500} height={350}></img>
                     ),
                   }}
                   options={{ triggerOnce: false, fadeDirections: "right" }}
@@ -78,10 +79,7 @@ function App() {
                   body={{
                     bodyText: UNIVERSITY_THESIS,
                     embedContent: (
-                      <img
-                        src={"./src/assets/ecg.png"}
-                        width={450}
-                        height={250}></img>
+                      <img src={ecgthesis} width={450} height={250}></img>
                     ),
                   }}
                   options={{ triggerOnce: false, fadeDirections: "left" }}
