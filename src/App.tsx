@@ -9,8 +9,8 @@ import "./App.css";
 import myresume from "./assets/my_resume-sh.pdf";
 import pjatkLogo from "./assets/pjatk.png";
 import snowflakeLogo from "./assets/snowflake.png";
-import webscrapers from "./src/assets/webscraper.png";
-import ecgthesis from "./src/assets/ecg.png";
+import webscrapers from "./assets/webscraper.png";
+import ecgthesis from "./assets/ecg.png";
 import { PortfolioCrad } from "./component/PortolioCard";
 import { Sections } from "./component/Sections";
 import {
