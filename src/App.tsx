@@ -51,7 +51,10 @@ function App() {
             <div style={{ marginRight: "300px" }}>
               <Sections title="Highlights">
                 <PortfolioCrad
-                  header={{ headerText: "Physics bomb" }}
+                  header={{
+                    headerText: "Physics bomb",
+                    link: "https://github.com/momipochi/physics_bomb",
+                  }}
                   body={{
                     bodyText: PHYSICS_BOMB,
                     embedContent: (
@@ -65,7 +68,10 @@ function App() {
                   options={{ triggerOnce: false, fadeDirections: "left" }}
                 />
                 <PortfolioCrad
-                  header={{ headerText: "Web-scrapers" }}
+                  header={{
+                    headerText: "Web-scrapers",
+                    link: "https://github.com/momipochi/exh",
+                  }}
                   body={{
                     bodyText: WEB_SCRAPERS,
                     embedContent: (

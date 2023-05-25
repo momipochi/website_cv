@@ -4,6 +4,7 @@ import { Fade } from "react-awesome-reveal";
 
 interface PortfolioCardHeader {
   headerText: string;
+  link?: string;
 }
 interface PortfolioCardBody {
   bodyText: string;
@@ -60,7 +61,9 @@ export const PortfolioCrad = ({
           marginLeft: "auto",
           marginRight: "auto",
         }}>
-        <h2 style={{ textAlign: "left" }}>{header.headerText}</h2>
+        <h2 style={{ textAlign: "left" }}>
+          {header.headerText} {header.link && <a href={header.link} target="_blank">Github repo link</a>}
+        </h2>
         <HeaderSection body={body} />
         <div>{footer?.footerText}</div>
       </div>
