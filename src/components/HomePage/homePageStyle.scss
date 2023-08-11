@@ -1,0 +1,349 @@
+@import "./../../styles/globalStyles.scss";
+
+$leftMargin: 20vh;
+$righMargin: 20vh;
+
+$animationTextSize: 4vh;
+
+#background-animation {
+  z-index: -1;
+  position: fixed;
+}
+
+.header {
+  display: flex;
+  padding-left: $leftMargin;
+  background-color: white;
+  // margin-right: 90px;
+  // justify-content: space-around;
+
+  h1 {
+    font-size: 70px;
+    color: $grayColor2;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    img{
+      width: 5vh;
+    }
+  }
+  h2 {
+    margin: auto;
+    margin-left: 30%;
+    color: $grayColor2;
+    .link {
+      color: $grayColor2;
+      text-decoration: none;
+    }
+  }
+}
+.body2 {
+  padding-left: $leftMargin;
+  padding-right: $righMargin;
+}
+.body {
+  margin-left: $leftMargin;
+
+  h2 {
+    font-size: 40px;
+    color: $blackColor;
+    margin: 0;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  }
+
+  h2:first-of-type {
+    margin-top: 8vh;
+  }
+
+  h2:last-of-type {
+    margin-bottom: 5vh;
+  }
+
+  h3 {
+    color: $grayColor;
+    margin: 0;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  }
+
+  h3:last-of-type {
+    margin-bottom: 5vh;
+  }
+}
+
+.body-container {
+  display: flex;
+  max-height: 100%;
+  min-height: 99vh;
+}
+
+.canvas-container {
+  margin: auto $righMargin auto auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#background-changer {
+  margin: auto;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: $grayColor7;
+  display: flex;
+
+  #googlePaySection {
+    margin: 4vh $righMargin 4vh auto;
+    text-align: right;
+
+    h5 {
+      margin: 0;
+    }
+  }
+}
+
+#right-side-animation {
+  background-color: white;
+  display: flex;
+  width: 50vh;
+  height: 15vh;
+  border: black solid;
+  border-radius: 20px;
+  margin: auto;
+  h1 {
+    margin: auto;
+    font-size: $animationTextSize;
+    font-weight: normal;
+    span.typed-text {
+      color: black;
+    }
+  }
+
+  // Cursor blinking CSS Starts...
+  .blinking-cursor {
+    font-size: $animationTextSize;
+    color: #2c3e50;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+  }
+  @keyframes blink {
+    from,
+    to {
+      color: transparent;
+    }
+    50% {
+      color: #2c3e50;
+    }
+  }
+  @-moz-keyframes blink {
+    from,
+    to {
+      color: transparent;
+    }
+    50% {
+      color: #2c3e50;
+    }
+  }
+  @-webkit-keyframes blink {
+    from,
+    to {
+      color: transparent;
+    }
+    50% {
+      color: #2c3e50;
+    }
+  }
+  @-ms-keyframes blink {
+    from,
+    to {
+      color: transparent;
+    }
+    50% {
+      color: #2c3e50;
+    }
+  }
+  @-o-keyframes blink {
+    from,
+    to {
+      color: transparent;
+    }
+    50% {
+      color: #2c3e50;
+    }
+  }
+}
+
+.hrLine {
+  background: linear-gradient(to right, $grayColor2, $BeigeColor);
+  height: 0.2vh;
+}
+
+.beginChat {
+  text-decoration: none;
+
+  h2 {
+    margin: auto;
+    text-align: center;
+    color: $whiteColor;
+  }
+
+  margin-top: 20vh;
+  margin-left: $leftMargin;
+  display: flex;
+  border-radius: 20px;
+  border-bottom-right-radius: 0px;
+  z-index: 1;
+  width: 20vh;
+  height: 7.5vh;
+  background-color: $grayColor7;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $grayColor7;
+    border-radius: 20px;
+    border-bottom-right-radius: 0px;
+    z-index: -2;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: darken($grayColor3, 35%);
+    transition: all 0.3s;
+    border-radius: 20px;
+    border-bottom-right-radius: 0px;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: #fff;
+
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    #googlePaySection {
+      margin: auto;
+      margin-bottom: 2vh;
+    }
+  }
+}
+
+.animated-button {
+  background-color: $grayColor7;
+  color: $grayColor2;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.text {
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s;
+}
+.arrow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s;
+}
+
+.text {
+  z-index: 2;
+}
+
+.arrow {
+  transform: translateX(100%);
+  background-color: $grayColor;
+}
+
+.animated-button:hover .text {
+  transform: translateX(-100%);
+}
+
+.animated-button:hover .arrow {
+  transform: translateX(0);
+}
+
+#pageContainer {
+  scroll-behavior: smooth;
+  height: 100%;
+  max-height: 99vh;
+  overflow-y: scroll;
+}
+
+#pageContainer::-webkit-scrollbar {
+  width: 0.2em;
+}
+
+#pageContainer::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+#pageContainer::-webkit-scrollbar-thumb {
+  background-color: $grayColor;
+  outline: 1px solid $grayColor2;
+}
+.body3 {
+  padding-left: $leftMargin;
+  padding-right: $righMargin;
+  background-color: $grayColor7;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 30vh;
+}
+.content {
+  .body2 {
+    background-color: $grayColor7;
+    min-height: 99vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 30vh;
+    div {
+      margin-bottom: 10vh;
+    }
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
