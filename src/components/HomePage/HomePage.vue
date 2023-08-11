@@ -15,7 +15,9 @@ import { AmigoRoutes } from "../../routing/Routes";
               src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
               alt=""
           /></a>
-          <a target="_blank" href="https://www.linkedin.com/in/alexander-tu-515092223/"
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/alexander-tu-515092223/"
             ><img
               src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
               alt=""
@@ -40,7 +42,10 @@ import { AmigoRoutes } from "../../routing/Routes";
             </div>
             <div>
               <h3>I don't update the website often</h3>
-              <h3>I might add some images for projects which I cannot share git repo</h3>
+              <h3>
+                I might add some images for projects which I cannot share git
+                repo
+              </h3>
             </div>
           </div>
 
